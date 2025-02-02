@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -18,20 +19,20 @@
 <div>
     <div class="stats shadow">
         <div class="stat">
-          <div id="account-balance" class="stat-value">9400</div>
-          <div class="stat-desc">Available Balence</div>
+          <div id="account-balance" class="stat-value text-green-700">9400$</div>
+          <div class="stat-desc text-sm font-bold">Available Balence</div>
         </div>
       </div>
 </div>
     <div class="divider"></div>
     <!-- user action Button  -->
      <div>
-        <button class="btn btn-lg">Add Money</button>
-        <button class="btn btn-lg">Cash Out</button>
+        <button class="btn btn-lg font-extrabold bg-white">Add Money</button>
+        <button class="btn btn-lg font-extrabold bg-white">Cash Out</button>
      </div>
 <div class="divider"></div>
 <!-- add money Form-->
-<div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+<div class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
     <form class="card-body">
       <div class="form-control">
         <label class="label">
@@ -42,8 +43,8 @@
       <div class="form-control">
         <label class="label">
           <span class="label-text">PIN</span>
-        </label>
-        <input id="input-pin-number"  type="password" placeholder="Pin number" class="input input-bordered" autocomplete="off" required />
+        </label> 
+        <input id="input-pin-number"  type="password" placeholder="Pin number " class="input input-bordered" autocomplete="off" required />
       </div>
       <div class="form-control mt-6">
         <button id="btn-add-money" class="btn btn-primary">Add Money</button>
@@ -51,10 +52,33 @@
     </form>
   </div>
  <!-- add money form end -->
+  <!-- cash out start -->
+  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <form class="card-body">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Amount</span>
+        </label>
+        <input id="input-cash-out" type="number" placeholder="Amount" class="input input-bordered" required />
+      </div>
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">PIN</span>
+        </label> 
+        <input id="input-cash-out-pin"  type="password" placeholder="Pin number " class="input input-bordered" autocomplete="off" required />
+      </div>
+      <div class="form-control mt-6">
+        <button id="btn-cash-out" class="btn btn-primary">cash out</button>
+      </div>
+    </form>
+  </div>
+   <!-- cash out end -->
           </div>
         </div>
       </div>
    </main>
-   <script src="js/home.js"></script>
+   <!-- <script src="js/home.js"></script> -->
+    <script src="js/add-money.js"></script>
+    <script src="js/cash-out.js"></script>
 </body>
 </html>
