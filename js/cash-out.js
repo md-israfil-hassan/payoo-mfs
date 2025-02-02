@@ -7,7 +7,6 @@ const pinNumber = document.getElementById('input-cash-out-pin').value ;
 
 
 
-console.log(cashOut, pinNumber) ;
 // wrong way to verify pin number
 if( pinNumber === '1234'){
     const balance = document.getElementById('account-balance').innerText ;

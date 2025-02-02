@@ -28,7 +28,6 @@ if( pinNumberInput === '1234'){
     console.log('adding money to your account')
     //step-4: get the current balcnce
 const balance = document.getElementById('account-balance').innerText;
-console.log(typeof balance) ;
 
 //step-5: add addmoney input with balance
 
